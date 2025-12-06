@@ -85,4 +85,4 @@ Mohon tim teknis melanjutkan pekerjaan dari titik ini:
     * Cek apakah `marketingWallet` perlu dipisahkan dari `ownerWallet` di masa depan (untuk keamanan dana operasional).
 
 ---
-*Dokumen ini dibuat oleh Lead Architect (CEO) pada tanggal 7 Desember 2025.*
+*Dokumen ini dibuat oleh Jay pada tanggal 7 Desember 2025.*
