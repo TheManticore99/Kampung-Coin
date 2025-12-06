@@ -1,7 +1,7 @@
 {
   "name": "kampung-coin",
   "version": "1.0.0",
-  "description": "Containing KPNG ( Kampung Coin Smart contract Project",
+  "description": "Contains KPNG (Kampung Coin) Smart contract Project",
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",

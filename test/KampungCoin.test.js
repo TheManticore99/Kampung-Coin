@@ -112,7 +112,7 @@ describe("KampungCoin", function () {
       const currentSupply = await kampungCoin.totalSupply();
       const maxSupply = await kampungCoin.MAX_SUPPLY();
       const remainingSupply = maxSupply - currentSupply;
-      const tokensToMint = remainingSupply / ethers.parseEther("1") + BigInt(1);
+      const tokensToMint = Number(ethers.formatEther(remainingSupply)) + 1;
       
       await expect(
         kampungCoin.mint(addr1.address, tokensToMint)
@@ -123,7 +123,7 @@ describe("KampungCoin", function () {
       const currentSupply = await kampungCoin.totalSupply();
       const maxSupply = await kampungCoin.MAX_SUPPLY();
       const remainingSupply = maxSupply - currentSupply;
-      const tokensToMint = remainingSupply / ethers.parseEther("1");
+      const tokensToMint = Number(ethers.formatEther(remainingSupply));
       
       await kampungCoin.mint(addr1.address, tokensToMint);
       expect(await kampungCoin.totalSupply()).to.equal(maxSupply);
